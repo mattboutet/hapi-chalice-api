@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate-api",
-  "version": "0.2.0",
-  "description": "Boilerplate API",
+  "name": "chalice-api",
+  "version": "0.1.0",
+  "description": "Chalice API",
   "main": "lib/index.js",
   "scripts": {
     "start": "node server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devinivy/boilerplate-api"
+    "url": "https://github.com/mattboutet/chalice-api"
   },
-  "author": "Devin Ivy <devin@bigroomstudios.com>",
+  "author": "Matt Boutet <matt@bigroomstudios.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devinivy/boilerplate-api/issues"
+    "url": "https://github.com/mattboutet/chalice-api/issues"
   },
-  "homepage": "https://github.com/devinivy/boilerplate-api",
+  "homepage": "https://github.com/mattboutet/chalice-api",
   "dependencies": {
     "bassmaster": "1.8.x",
     "bedwetter": "1.x.x",
@@ -28,9 +28,12 @@
     "hoek": "2.x.x",
     "inert": "3.x.x",
     "joi": "7.x.x",
+    "node-uuid": "^1.4.3",
     "poop": "1.2.x",
     "vision": "4.x.x",
-    "sails-disk": "0.10.x"
+    "sails-disk": "0.10.x",
+    "sails-mysql": "0.12.x",
+    "wreck": "7.1.x"
   },
   "devDependencies": {
     "lab": "5.x.x"

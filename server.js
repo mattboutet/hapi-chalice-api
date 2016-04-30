@@ -4,9 +4,9 @@ var Glue = require('glue');
 var Config = require('./config');
 
 
-Config.server.boilerplateApi.uri = (Config.server.boilerplateApi.tls ? 'https://' : 'http://') +
-                                    Config.server.boilerplateApi.host + ':' +
-                                    Config.server.boilerplateApi.port;
+Config.server.chaliceApi.uri = (Config.server.chaliceApi.tls ? 'https://' : 'http://') +
+                                    Config.server.chaliceApi.host + ':' +
+                                    Config.server.chaliceApi.port;
 
 var manifest = {
 
@@ -18,11 +18,24 @@ var manifest = {
 
     connections: [
         {
-            host: Config.server.boilerplateApi.host,
-            port: Config.server.boilerplateApi.port,
-            labels: 'boilerplate-api',
+            host: Config.server.chaliceApi.host,
+            port: Config.server.chaliceApi.port,
+            labels: 'chalice-api',
             routes: {
-                cors: true
+                //cors: true
+                cors: {
+                    credentials: true,
+                    //isOriginExposed: false,
+                    origin: [
+                        'http://localhost:*',
+                        'https://localhost:*',
+                        'http://0.0.0.0:*',
+                        'https://0.0.0.0:*',
+                    ],
+                    additionalHeaders: [
+                        'Access-Control-Allow-Credentials', 'Access-Control-Allow-Origin'
+                    ]
+                },
             }
         }
     ],
@@ -34,7 +47,7 @@ var manifest = {
         './poop':       Config.poop,
 
         // Server-specific
-        '../lib': [{ select: 'boilerplate-api' }]
+        '../lib': [{ select: 'chalice-api' }]
 
     }
 
@@ -53,7 +66,7 @@ if (!module.parent) {
 
         server.start(function () {
 
-            console.log('Started on ' + Config.server.boilerplateApi.uri);
+            console.log('Chalice API Started on ' + Config.server.chaliceApi.uri);
         });
     });
 }

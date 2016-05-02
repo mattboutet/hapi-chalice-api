@@ -20,6 +20,7 @@
   "dependencies": {
     "bassmaster": "1.8.x",
     "bedwetter": "1.x.x",
+    "bcrypt": "0.8.x",
     "boom": "2.8.x",
     "dogwater": "0.4.x",
     "glue": "2.x.x",
@@ -28,6 +29,8 @@
     "hoek": "2.x.x",
     "inert": "3.x.x",
     "joi": "7.x.x",
+    "jsonwebtoken": "^5.0.4",
+    "lodash": "^4.11.1",
     "node-uuid": "^1.4.3",
     "poop": "1.2.x",
     "vision": "4.x.x",

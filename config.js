@@ -21,7 +21,7 @@ module.exports = {
             },*/
             mysql: {
                 adapter: "mysql",
-                
+
                 host      : 'localhost',
                 port      : 3306,
                 user      : Creds.mysqlCreds.user,
@@ -48,8 +48,8 @@ module.exports = {
     poop: {
         logPath: Path.join(__dirname, 'poop.log')
     },
-    
-    secrets: {//pull this out of source control before enabling
+
+    secrets: {
         jwtSecret: Creds.secrets.jwtSecret
     },
 

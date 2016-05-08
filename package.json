@@ -27,6 +27,7 @@
     "glue": "2.x.x",
     "hapi": "11.1.x",
     "hapi-auth-basic": "4.1.0",
+    "hapi-auth-jwt2": "5.2.0",
     "hapi-swagger": "2.2.x",
     "hoek": "2.x.x",
     "htmlparser": "1.7.7",

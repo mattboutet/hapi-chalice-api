@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/mattboutet/chalice-api",
   "dependencies": {
+    "async": "^2.0.0-rc.4",
     "bassmaster": "1.8.x",
-    "bedwetter": "1.x.x",
     "bcrypt": "0.8.x",
+    "bedwetter": "1.x.x",
     "boom": "2.8.x",
     "dogwater": "0.4.x",
     "glue": "2.x.x",
@@ -36,9 +37,9 @@
     "lodash": "^4.11.1",
     "node-uuid": "^1.4.3",
     "poop": "1.2.x",
-    "vision": "4.x.x",
     "sails-disk": "0.10.x",
     "sails-mysql": "0.12.x",
+    "vision": "4.x.x",
     "wreck": "7.1.x"
   },
   "devDependencies": {

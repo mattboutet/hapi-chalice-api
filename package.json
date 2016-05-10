@@ -36,6 +36,7 @@
     "joi": "7.x.x",
     "jsonwebtoken": "^5.0.4",
     "lodash": "^4.11.1",
+    "moment": "^2.13.0",
     "node-uuid": "^1.4.3",
     "poop": "1.2.x",
     "sails-disk": "0.10.x",

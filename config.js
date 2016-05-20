@@ -1,5 +1,7 @@
-var Path = require('path');
-var Creds = require('./credentials');
+'use strict';
+
+const Path = require('path');
+const Creds = require('./credentials');
 
 module.exports = {
 
@@ -20,7 +22,7 @@ module.exports = {
                 adapter: 'disk'
             },*/
             mysql: {
-                adapter: "mysql",
+                adapter: 'mysql',
 
                 host      : 'localhost',
                 port      : 3306,
@@ -51,6 +53,6 @@ module.exports = {
 
     secrets: {
         jwtSecret: Creds.secrets.jwtSecret
-    },
+    }
 
 };

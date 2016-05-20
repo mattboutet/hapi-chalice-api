@@ -24,7 +24,7 @@
     "bedwetter": "1.x.x",
     "boom": "2.8.x",
     "dogwater": "0.4.x",
-    "glue": "2.x.x",
+    "glue": "^3.2.0",
     "hapi": "11.1.x",
     "hapi-auth-basic": "4.1.0",
     "hapi-auth-jwt2": "5.2.0",
@@ -45,6 +45,8 @@
     "wreck": "7.1.x"
   },
   "devDependencies": {
-    "lab": "5.x.x"
+    "eslint-config-hapi": "^9.1.0",
+    "eslint-plugin-hapi": "^4.0.0",
+    "lab": "^10.6.0"
   }
 }
